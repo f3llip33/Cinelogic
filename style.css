@@ -150,3 +150,15 @@ header.navbar {
     flex-direction: row;
     gap: 20px;
 }
+
+.Breve{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.Cate{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
