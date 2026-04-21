@@ -87,10 +87,15 @@ header.navbar {
 
 /* Container Geral */
 .sugestoes-container {
+    margin-top: 20px;
+    margin-bottom:20px;
+    margin-right: 600px;
+    margin-left: 20px;
     padding: 40px 80px;
-    background-color: #1a1a1a; /* Fundo escuro da página */
+    background-color: #1a1a1a;
     color: white;
     font-family: sans-serif;
+    border-radius: 20px;
 }
 
 .sugestoes-container h2 {
