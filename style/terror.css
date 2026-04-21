@@ -1,0 +1,150 @@
+body{
+    background-color: rgb(53, 53, 53);
+    color: aliceblue;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header.navbar {
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    border-radius: 12px;
+    margin: 10px;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #8b1a1a;
+}
+
+/* Menu Hambúrguer */
+.menu-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger span {
+    height: 1px;
+    background-color: #ccc;
+    width: 100%;
+}
+
+.menu-text {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.search-pill {
+    background-color: #333333;
+    height: 28px;
+    width: 300px; /* Ajuste conforme necessário */
+    border-radius: 14px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.indicator {
+    width: 14px;
+    height: 14px;
+    background-color: #777;
+    border-radius: 50%;
+    position: absolute;
+    right: 60px; 
+}
+
+
+.login-btn {
+    font-size: 14px;
+    color: #ccc;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.login-btn:hover {
+    color: white;
+}
+
+main h2 {
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.terror {
+    display: grid;
+    /* Cria 4 colunas de tamanhos iguais */
+    grid-template-columns: repeat(4, 1fr); 
+    /* Espaçamento entre as imagens */
+    gap: 20px; 
+    /* Espaçamento interno e centralização */
+    padding: 20px;
+    justify-items: center; 
+}
+
+.terror img {
+    /* Faz as imagens ocuparem o espaço da coluna, mantendo a proporção */
+    width: 100%;
+    max-width: 180px; /* Tamanho máximo aproximado da sua imagem */
+    height: auto;
+    border-radius: 12px; /* Cantos arredondados como na imagem */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.terror img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+
+footer {
+    background-color: #1e1e1e;
+    padding: 60px 40px; /* Aumenta o espaço interno (em cima/baixo e lados) */
+    display: flex;
+    flex-direction: column; /* Coloca um grupo embaixo do outro */
+    gap: 80px; /* Cria o espaçamento grande entre Contato e Redes Sociais */
+    color: white;
+}
+
+footer h2 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .terror {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row; 
+        justify-content: space-between; /* Um na esquerda, outro na direita */
+        align-items: flex-start;
+    }
+}

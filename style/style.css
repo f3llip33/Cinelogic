@@ -1,0 +1,305 @@
+body{
+    background-color: rgb(53, 53, 53);
+    color: aliceblue;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header.navbar {
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    border-radius: 12px;
+    margin: 10px;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #8b1a1a;
+}
+
+/* Menu Hambúrguer */
+.menu-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger span {
+    height: 1px;
+    background-color: #ccc;
+    width: 100%;
+}
+
+.menu-text {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.search-pill {
+    background-color: #333333;
+    height: 28px;
+    width: 300px; /* Ajuste conforme necessário */
+    border-radius: 14px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.indicator {
+    width: 14px;
+    height: 14px;
+    background-color: #777;
+    border-radius: 50%;
+    position: absolute;
+    right: 60px; 
+}
+
+
+.login-btn {
+    font-size: 14px;
+    color: #ccc;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.login-btn:hover {
+    color: white;
+}
+
+/* Container Principal */
+.card-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #2b2b2b 0%, #1a1a1a 100%);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px;
+    color: white;
+    overflow: hidden; /* Garante que nada saia das bordas arredondadas */
+}
+
+/* Lado Esquerdo: Texto */
+.card-content h3 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Botão "Começar" */
+.btn-comecar {
+    background-color: #8b1a1a; /* Vermelho que usamos no logo */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-comecar:hover {
+    background-color: #a32a2a;
+}
+
+.btn-comecar:active {
+    background-color: #561212;
+}
+
+/* Lado Direito: Imagem */
+.card-image img {
+    max-width: 350px; /* Ajuste o tamanho da cadeira aqui */
+    height: auto;
+    display: block;
+}
+/* Container Geral */
+.sugestoes-container {
+    padding: 40px 80px;
+    background-color: #1a1a1a; /* Fundo escuro da página */
+    color: white;
+    font-family: sans-serif;
+}
+
+.sugestoes-container h2 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+/* O Card de Sugestão */
+.card-usuario {
+    background-color: #d9d9d9; /* Cor cinza do card */
+    border: 1px solid #8b1a1a;  /* Borda sutil vermelha */
+    border-radius: 15px;
+    padding: 25px;
+    width: 100%;
+    max-width: 600px; /* Ajuste conforme seu layout */
+    margin-bottom: 20px;
+    color: #333; /* Texto escuro dentro do card claro */
+}
+
+/* Cabeçalho do Card (Avatar + Nome) */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #777; /* Círculo cinza */
+    border-radius: 50%;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.user-text {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Botão Ver Mais */
+.btn-ver-mais {
+    background-color: #e60000; /* Vermelho vivo */
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn-ver-mais:hover {
+    background-color: #b30000;
+}
+
+/* Remove o fundo e as bordas padrão para parecer texto comum */
+.input-nome, 
+.input-texto {
+    background: transparent;
+    border: none;
+    outline: none; /* Remove a linha azul ao clicar */
+    font-family: inherit;
+    width: 100%;
+    color: #333; /* Cor do texto que o usuário digita */
+}
+
+/* Deixa o nome em negrito como no design */
+.input-nome {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Ajusta a caixa de texto grande */
+.input-texto {
+    font-size: 16px;
+    resize: none; /* Impede o usuário de puxar o cantinho e deformar o card */
+    min-height: 80px;
+    text-transform: uppercase; /* Mantém o estilo de "TEXTO" da imagem */
+}
+
+/* Estilo para a frase que aparece antes de digitar (placeholder) */
+.input-nome::placeholder,
+.input-texto::placeholder {
+    color: #777;
+}
+
+footer {
+    background-color: #1e1e1e;
+    padding: 60px 40px; /* Aumenta o espaço interno (em cima/baixo e lados) */
+    display: flex;
+    flex-direction: column; /* Coloca um grupo embaixo do outro */
+    gap: 80px; /* Cria o espaçamento grande entre Contato e Redes Sociais */
+    color: white;
+}
+
+footer h2 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Se quiser que eles fiquem lado a lado em telas grandes */
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row; 
+        justify-content: space-between; /* Um na esquerda, outro na direita */
+        align-items: flex-start;
+    }
+}
+
+/* Responsividade (Para celulares) */
+@media (max-width: 768px) {
+    .card-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .card-image img {
+        max-width: 200px;
+        margin-top: 20px;
+    }
+}
+
+.Movie {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    transition: 0.5s;
+}
+
+.Breve{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    transition: 0.5s;
+}
+
+.Cate{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    transition: 0.5s;
+}
+
+.Movie img:hover {
+    transform: scale(1.1);
+}
+
+.Breve img:hover {
+    transform: scale(1.1);
+}
+
+.Cate img:hover {
+    transform: scale(1.1);
+}
