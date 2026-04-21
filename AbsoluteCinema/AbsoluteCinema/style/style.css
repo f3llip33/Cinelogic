@@ -238,7 +238,7 @@ footer {
     display: flex;
     flex-direction: column; /* Coloca um grupo embaixo do outro */
     gap: 80px; /* Cria o espaçamento grande entre Contato e Redes Sociais */
-    color: white;
+    color: #ffffff;
 }
 
 footer h2 {
