@@ -54,14 +54,38 @@ header.navbar {
     color: #ccc;
 }
 
-.search-pill {
+.search-input {
     background-color: #333333;
-    height: 28px;
-    width: 300px; /* Ajuste conforme necessário */
-    border-radius: 14px;
-    position: relative;
-    display: flex;
-    align-items: center;
+    border: none;
+    outline: none;
+    height: 32px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 0 45px 0 15px; /* Espaço para o texto não bater na bolinha */
+    color: white;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.search-input:focus {
+    background-color: #444444; /* Realce ao clicar */
+    box-shadow: 0 0 5px rgba(139, 26, 26, 0.5); /* Brilho sutil vermelho */
+}
+
+/* A bolinha (índicador) que agora parece um botão de busca */
+.search-icon {
+    width: 14px;
+    height: 14px;
+    background-color: #777;
+    border-radius: 50%;
+    position: absolute;
+    right: 12px;
+    pointer-events: none; /* Deixa o clique passar para o input */
+}
+
+/* Ajuste do placeholder */
+.search-input::placeholder {
+    color: #888;
 }
 
 .indicator {
@@ -82,6 +106,15 @@ header.navbar {
 }
 
 .login-btn:hover {
+    color: white;
+}
+
+.login-btn a{
+    color: #ccc;
+    text-decoration: none;
+}
+
+.login-btn a:hover{
     color: white;
 }
 
